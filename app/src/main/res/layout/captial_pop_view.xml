@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/captial_pop_w"
+    android:layout_height="@dimen/captial_pop_h"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/shape_pop_rect"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/type1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/captial_pop_item_h"
+        android:background="@drawable/selector_trans_item"
+        android:gravity="center"
+        android:text="@string/captial_item_0"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/captial_pop_textsize" />
+
+    <include layout="@layout/line_gray" />
+
+    <TextView
+        android:id="@+id/type2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/captial_pop_item_h"
+        android:background="@drawable/selector_trans_item"
+        android:gravity="center"
+        android:text="@string/captial_item_1"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/captial_pop_textsize" />
+
+    <include layout="@layout/line_gray" />
+
+    <TextView
+        android:id="@+id/type3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/captial_pop_item_h"
+        android:background="@drawable/selector_trans_item"
+        android:gravity="center"
+        android:text="@string/captial_item_2"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/captial_pop_textsize" />
+
+    <include layout="@layout/line_gray" />
+
+    <TextView
+        android:id="@+id/type4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/captial_pop_item_h"
+        android:background="@drawable/selector_trans_item"
+        android:gravity="center"
+        android:text="@string/captial_item_3"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/captial_pop_textsize" />
+
+    <include layout="@layout/line_gray" />
+
+    <TextView
+        android:id="@+id/type5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/captial_pop_item_h"
+        android:background="@drawable/selector_trans_item"
+        android:gravity="center"
+        android:text="@string/captial_item_4"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/captial_pop_textsize" />
+
+    <include layout="@layout/line_gray" />
+
+    <TextView
+        android:id="@+id/type0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/captial_pop_item_h"
+        android:background="@drawable/selector_trans_item"
+        android:gravity="center"
+        android:text="@string/captial_item_all"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/captial_pop_textsize" />
+
+</LinearLayout>

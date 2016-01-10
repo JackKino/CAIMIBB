@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/forget_pwd_step1_margin_top" />
+
+    <include layout="@layout/line_gray" />
+
+    <com.cmbb.app.views.widget.EditLayout
+        android:id="@+id/edit_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingRight="@dimen/login_logo_padding" />
+
+    <include layout="@layout/line_gray" />
+
+
+    <Button
+        android:id="@+id/next_step"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_btn_height"
+        android:layout_marginLeft="@dimen/login_logo_padding"
+        android:layout_marginRight="@dimen/login_logo_padding"
+        android:layout_marginTop="@dimen/forget_pwd_step1_margin_top"
+        android:background="@drawable/selector_btn_blue"
+        android:text="@string/forget_pwd_next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_btn_textsize" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/forget_safer_margin_top"
+        android:drawableLeft="@mipmap/icon_safer_detail"
+        android:text="@string/forget_safer_detail"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/forget_safer_des_textsize"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/special_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/forget_text_margin_top"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:button="@drawable/selector_checkbox_btn"
+            android:checked="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_text_des"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/forget_safer_des_textsize" />
+
+        <TextView
+            android:id="@+id/regist_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_text_des1"
+            android:textColor="@color/color_app_base_color"
+            android:textSize="@dimen/forget_safer_des_textsize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_text_and"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/forget_safer_des_textsize" />
+
+        <TextView
+            android:id="@+id/persional_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_text_des2"
+            android:textColor="@color/color_app_base_color"
+            android:textSize="@dimen/forget_safer_des_textsize" />
+    </LinearLayout>
+</LinearLayout>

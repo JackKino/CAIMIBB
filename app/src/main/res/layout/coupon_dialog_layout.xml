@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/coupon_dialog_w"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/coupon_dialog_item_margin_left"
+    android:layout_marginTop="@dimen/coupon_dialog_item_margin_left"
+    android:background="@drawable/shape_white_rect"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/invest_dialog_title_h"
+        android:background="@color/color_f97373"
+        android:gravity="center"
+        android:text="@string/coupon_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/invest_dialog_title_textsize" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/coupon_dialog_title_h"
+        android:layout_gravity="center"
+        android:drawableLeft="@mipmap/icon_question"
+        android:drawablePadding="5dp"
+        android:gravity="center" android:id="@+id/coupon_des"
+        android:overScrollMode="never"
+        android:text="@string/wallet_ticket_user_detail"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/wallet_page1_title_testszie" />
+
+    <include layout="@layout/line_gray" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/coupon_dialog_maring_v"
+        android:layout_marginTop="@dimen/coupon_dialog_maring_v"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:divider="@color/gray_line"
+        android:dividerHeight="@dimen/line_gray_h"
+        android:listSelector="@drawable/selector_trans_item"
+        android:overScrollMode="never"
+        android:scrollbars="none"></ListView>
+
+    <include layout="@layout/line_gray" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="@dimen/invest_dialog_btn_w"
+        android:layout_height="@dimen/invest_dialog_btn_h"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/coupon_dialog_maring_v"
+        android:background="@drawable/selector_btn_blue"
+        android:text="@string/coupon_should_use"
+        android:textColor="@color/white"
+        android:textSize="@dimen/invest_dialog_item1_textsize" />
+</LinearLayout>

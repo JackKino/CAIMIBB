@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/recharge_history_margin_top"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <include layout="@layout/line_gray" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/recharge_r_l_margin"
+                android:layout_marginRight="@dimen/recharge_r_l_margin"
+                android:background="@color/white"
+                android:divider="@color/gray_line"
+                android:dividerHeight="@dimen/line_gray_h"
+                android:listSelector="@drawable/selector_trans_item"
+                android:overScrollMode="never"
+                android:scrollbars="none"></ListView>
+
+            <TextView
+                android:id="@+id/null_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@mipmap/icon_loading_2"
+                android:text="@string/common_null"
+                android:textColor="@color/color_999999"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <include layout="@layout/line_gray" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/history_back_to"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_item_h"
+        android:layout_gravity="bottom"
+        android:background="@drawable/selector_btn_blue_rect"
+        android:text="@string/recharge_recharge_history_back"
+        android:textColor="@color/white"
+        android:textSize="@dimen/more_active_recharge_textsize" />
+
+</LinearLayout>

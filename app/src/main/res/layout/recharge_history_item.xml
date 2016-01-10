@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/recharge_item_height"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/recharge_r_l_margin"
+    android:paddingRight="@dimen/recharge_r_l_margin">
+
+    <TextView
+        android:id="@+id/recharge_value"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="+1400"
+        android:textSize="@dimen/recharge_history_value_textsize" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="right|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/recharge_statu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="充值成功"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/recharge_history_value_textsize" />
+
+        <TextView
+            android:id="@+id/recharge_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="2015/11/22 18:20"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/recharge_history_value_textsize" />
+    </LinearLayout>
+</LinearLayout>

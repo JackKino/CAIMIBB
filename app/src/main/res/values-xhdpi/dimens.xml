@@ -1,0 +1,285 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+
+    <dimen name="refresh_margin">10dp</dimen>
+    <dimen name="refresh_textsize">15sp</dimen>
+
+    <dimen name="common_loading_textsize">14sp</dimen>
+    <dimen name="common_loading_padding">5dp</dimen>
+    <dimen name="common_title_textsize">16.5sp</dimen>
+    <dimen name="common_title_padding">10dp</dimen>
+    <dimen name="common_title_padding_r">20dp</dimen>
+    <dimen name="common_title_right_textsize">16sp</dimen>
+    <dimen name="common_btn_shape">5dp</dimen>
+    <dimen name="common_dialog_min_w">80dp</dimen>
+    <dimen name="common_dialog_min_h">55dp</dimen>
+
+    <dimen name="loading_max_width">40dp</dimen>
+    <dimen name="loading_min_width">25dp</dimen>
+    <dimen name="loading_border_w">2dp</dimen>
+    <dimen name="loading_radius">18dp</dimen>
+    <dimen name="loading_failed_tip_textsize">16sp</dimen>
+    <dimen name="loading_failed_tip_padding">10dp</dimen>
+    <dimen name="loading_dialog_min_w">65dp</dimen>
+
+    <!--动画半径-->
+    <dimen name="circle_radius">5dp</dimen>
+    <dimen name="circle_spacing">5dp</dimen>
+
+    <dimen name="line_gray_h">0.5dp</dimen>
+    <dimen name="line_corner">4dp</dimen>
+    <dimen name="line_shape_w">1.5dp</dimen>
+    <!--主页-->
+    <dimen name="main_banner_height">148dp</dimen>
+    <dimen name="main_banner_doc_w_h">5dp</dimen>
+    <dimen name="main_banner_doc_margin">15dp</dimen>
+    <dimen name="main_menu_textsize">10sp</dimen>
+    <dimen name="main_menu_drawable_padding0">2dp</dimen>
+    <dimen name="main_menu_drawable_padding">5dp</dimen>
+    <dimen name="main_menu_about_textsize">13.5sp</dimen>
+    <dimen name="main_menu_viewfilter_h">19dp</dimen>
+    <dimen name="main_menu_item_textsize">11.5sp</dimen>
+    <dimen name="main_menu_item_h">75dp</dimen>
+    <dimen name="main_menu_recomment_item_h">27dp</dimen>
+    <dimen name="main_menu_recomment_item_p">16dp</dimen>
+    <dimen name="main_menu_recomment_textsuze">13.5sp</dimen>
+    <dimen name="main_menu_recomment_content_h">77dp</dimen>
+    <dimen name="main_menu_recomment_btn_textsize">8.5sp</dimen>
+    <dimen name="main_menu_recomment_btn_w">45dp</dimen>
+    <dimen name="main_menu_recomment_btn_h">12dp</dimen>
+    <dimen name="main_menu_recomment_days_size">21sp</dimen>
+    <dimen name="main_menu_recomment_day_des_size">10.5sp</dimen>
+    <dimen name="main_menu_recomment_percent_size">29sp</dimen>
+    <dimen name="main_menu_recomment_paddding">5dp</dimen>
+    <dimen name="main_product_name_textsize">14sp</dimen>
+    <dimen name="main_product_add_textsize">11.5sp</dimen>
+    <dimen name="main_product_add_w">90dp</dimen>
+    <dimen name="main_product_add_h">28dp</dimen>
+    <dimen name="main_about_height">39dp</dimen>
+    <dimen name="main_flipper_textsize">10.5sp</dimen>
+    <dimen name="main_activity_min_h">115dp</dimen>
+
+    <!--资产-->
+    <dimen name="my_top_view_h">180dp</dimen>
+    <dimen name="my_top_view_item1_h">76.5dp</dimen>
+    <dimen name="my_top_name_textsize">18.5sp</dimen>
+    <dimen name="my_top_name_padding">15dp</dimen>
+    <dimen name="my_top_ticket_textsize">13.5dp</dimen>
+    <dimen name="my_top_ticket_margin">8dp</dimen>
+    <dimen name="my_top_margin2">23.5dp</dimen>
+    <dimen name="my_top_margin3">14dp</dimen>
+    <dimen name="my_item_h">49dp</dimen>
+    <dimen name="my_item_h_padding">11.5dp</dimen>
+    <dimen name="my_item_drawable_padding">21dp</dimen>
+    <dimen name="my_item_recharge_w">55dp</dimen>
+    <dimen name="my_item_recharge_h">29dp</dimen>
+    <dimen name="my_item_recharge_textsize">13.5sp</dimen>
+
+    <!--更多-->
+    <dimen name="more_margin_top">14dp</dimen>
+    <dimen name="more_active_add_in">76.5dp</dimen>
+    <dimen name="more_active_recharge_textsize">14.5dp</dimen>
+    <dimen name="more_active_textsize">11.5dp</dimen>
+    <dimen name="more_active_top_item_h">37dp</dimen>
+    <dimen name="more_active_margin_bottom">10dp</dimen>
+    <dimen name="more_active_image_h">143dp</dimen>
+    <dimen name="more_active_image_margin">14dp</dimen>
+    <dimen name="more_feedback_edit_h">155dp</dimen>
+    <dimen name="more_feedback_edit_textzie">13.5sp</dimen>
+    <dimen name="more_feedback_edit_padding">14dp</dimen>
+    <dimen name="more_feedback_edit_left_textsize">11.5dp</dimen>
+    <dimen name="more_connect_dialog_content_h">90dp</dimen>
+
+    <!--登录-->
+    <dimen name="login_logo_h">144dp</dimen>
+    <dimen name="login_logo_padding">11dp</dimen>
+    <dimen name="login_edit_h">49dp</dimen>
+    <dimen name="login_edit_textsize">13.5sp</dimen>
+    <dimen name="login_btn_margin_top">36dp</dimen>
+    <dimen name="login_btn_height">42dp</dimen>
+    <dimen name="login_btn_textsize">16.5sp</dimen>
+    <dimen name="login_btn_regist_margint_top">17dp</dimen>
+
+    <!--忘记密码-->
+    <dimen name="forget_pwd_step1_margin_top">25dp</dimen>
+    <dimen name="forget_safer_margin_top">10dp</dimen>
+    <dimen name="forget_text_margin_top">40dp</dimen>
+    <dimen name="forget_safer_des_textsize">11.5sp</dimen>
+    <dimen name="forget_safer_des_textsize_margin_top">20dp</dimen>
+    <dimen name="forget_safer_des_textsize_margin_left">10dp</dimen>
+    <dimen name="forget_pwd_textsize">13.5sp</dimen>
+
+    <!--充值-->
+    <dimen name="recharge_top_margin">15dp</dimen>
+    <dimen name="recharge_item_height">49dp</dimen>
+    <dimen name="recharge_r_l_margin">12dp</dimen>
+    <dimen name="recharge_textsize">13.5sp</dimen>
+    <dimen name="recharge_history_margin_top">13dp</dimen>
+    <dimen name="recharge_history_value_textsize">13.5sp</dimen>
+
+    <!--用户信息-->
+    <dimen name="user_margin_top">13dp</dimen>
+    <dimen name="user_margin_top2">23dp</dimen>
+    <dimen name="user_exit_margin_top">41dp</dimen>
+    <dimen name="user_update_pwd_margin_top">15dp</dimen>
+    <dimen name="user_update_pwd_margin_top2">30dp</dimen>
+
+    <!--钱包-->
+    <dimen name="wallet_title_h">42dp</dimen>
+    <dimen name="wallet_title_textsize">13.5sp</dimen>
+    <dimen name="wallet_movebar_h">3dp</dimen>
+    <dimen name="wallet_income_h">92.5dp</dimen>
+    <dimen name="wallet_income_textsize">35sp</dimen>
+    <dimen name="wallet_income_yuan_textsize">21sp</dimen>
+    <dimen name="wallet_item_margin">13dp</dimen>
+    <dimen name="wallet_item_margin2">49dp</dimen>
+    <dimen name="wallet_page1_title_h">27dp</dimen>
+    <dimen name="wallet_page1_title_testszie">11.5sp</dimen>
+
+    <!--优惠券-->
+    <dimen name="ticket_group_item_height">32.5dp</dimen>
+    <dimen name="ticket_group_item_textsize">13.5sp</dimen>
+    <dimen name="ticket_group_item_margin">15dp</dimen>
+    <dimen name="ticket_group_item_margin_l_r">30dp</dimen>
+    <dimen name="ticket_group_money_textsize">22sp</dimen>
+    <dimen name="ticket_group_name_textsize">10.5sp</dimen>
+    <dimen name="ticket_group_time_textsize">8.5sp</dimen>
+    <dimen name="ticket_group_time_height">18dp</dimen>
+    <dimen name="ticket_group_type_textsize">18sp</dimen>
+
+    <!--投资记录-->
+    <dimen name="invest_top_view_h">135dp</dimen>
+    <dimen name="invest_top_money_textsize">13.5sp</dimen>
+    <dimen name="invest_top_money_value_textsize">35sp</dimen>
+    <dimen name="invest_top_money_value_m_textsize">21sp</dimen>
+    <dimen name="invest_divier_height">10dp</dimen>
+    <dimen name="invest_name_height">33dp</dimen>
+    <dimen name="invest_item_margin">15dp</dimen>
+    <dimen name="invest_item_mid_height">64dp</dimen>
+    <dimen name="invest_item_mid_textsize">12.5sp</dimen>
+    <dimen name="invest_title_view_h">135dp</dimen>
+
+
+    <!--项目详情-->
+    <dimen name="detail_speaker_textsize">10.5sp</dimen>
+    <dimen name="detail_speaker_height">25dp</dimen>
+    <dimen name="detail_speaker_margin_r_l">12dp</dimen>
+    <dimen name="detail_time_end_textsize">11.5sp</dimen>
+    <dimen name="detail_title_textsize">13.5sp</dimen>
+    <dimen name="detail_persend_textsize">71.5sp</dimen>
+    <dimen name="detail_persend_textsize_">21.5sp</dimen>
+    <dimen name="detail_persend_margin_top">10dp</dimen>
+    <dimen name="detail_progress_w">301dp</dimen>
+    <dimen name="detail_progress_h">7.5dp</dimen>
+    <dimen name="detail_progress_margin">10dp</dimen>
+    <dimen name="detail_item1_h">96dp</dimen>
+    <dimen name="detail_item2_h">35dp</dimen>
+    <dimen name="detail_item3_h">117dp</dimen>
+
+    <!--投资记录-->
+    <dimen name="captial_top_space">13dp</dimen>
+    <dimen name="captial_item_height">93dp</dimen>
+    <dimen name="captial_item_time_textsize">8.5sp</dimen>
+    <dimen name="captial_item_des_textsize">11.5sp</dimen>
+    <dimen name="captial_item_type_textsize">12.5sp</dimen>
+    <dimen name="captial_item_divider">13dp</dimen>
+    <dimen name="captial_pop_w">118dp</dimen>
+    <dimen name="captial_pop_h">235dp</dimen>
+    <dimen name="captial_pop_textsize">16sp</dimen>
+    <dimen name="captial_pop_item_h">39dp</dimen>
+
+    <!--理财列表-->
+    <dimen name="finacial_group_h">20dp</dimen>
+    <dimen name="finacial_group_maring">22.5dp</dimen>
+    <dimen name="finacial_group_textsize">12.5sp</dimen>
+    <dimen name="finacial_child_margin_l_r">13.5dp</dimen>
+    <dimen name="finacial_child_margin_t_b">11.5dp</dimen>
+    <dimen name="finacial_child_padding_t_b">7dp</dimen>
+    <dimen name="finacial_child_padding_l_r">9dp</dimen>
+    <dimen name="finacial_child_margin">7dp</dimen>
+    <dimen name="finacial_item_h">102dp</dimen>
+    <dimen name="finacial_item1_textsize">17.5sp</dimen>
+    <dimen name="finacial_item1_textsize2">11.5sp</dimen>
+    <dimen name="finacial_item2_textsize">8.5sp</dimen>
+    <dimen name="finacial_item2_margin">7dp</dimen>
+    <dimen name="finacial_item3_margin">10dp</dimen>
+    <dimen name="finacial_title_textsize">13.5sp</dimen>
+    <dimen name="finacial_progress_w_h">51dp</dimen>
+    <dimen name="finacial_top_padding">24dp</dimen>
+    <dimen name="finacial_top_padding_top">12dp</dimen>
+
+    <dimen name="finacial_history_title_h">40dp</dimen>
+    <dimen name="finacial_history_title_margin">15dp</dimen>
+    <dimen name="finacial_history_item_h">49dp</dimen>
+    <dimen name="finacial_history_item_mobile_textsize">13.5sp</dimen>
+    <dimen name="finacial_history_item_date_textsize">9sp</dimen>
+
+    <!--立即投资-->
+    <dimen name="invest_dialog_w">278dp</dimen>
+    <dimen name="invest_dialog_h">170.5dp</dimen>
+    <dimen name="invest_dialog_title_h">45dp</dimen>
+    <dimen name="invest_dialog_content_h">126dp</dimen>
+    <dimen name="invest_dialog_title_textsize">16.5sp</dimen>
+    <dimen name="invest_dialog_item1_h">28dp</dimen>
+    <dimen name="invest_dialog_margin_top">13dp</dimen>
+    <dimen name="invest_dialog_item1_textsize">13.5sp</dimen>
+    <dimen name="invest_dialog_item2_textsize">11.5sp</dimen>
+    <dimen name="invest_dialog_btn_h">36dp</dimen>
+    <dimen name="invest_dialog_btn_w">120dp</dimen>
+
+
+    <!--立即支付-->
+    <dimen name="pay_top_h">137dp</dimen>
+    <dimen name="pay_top_margin_top">9dp</dimen>
+    <dimen name="pay_top_item_margin_l_r">12dp</dimen>
+    <dimen name="pay_top_margin_l_r">20dp</dimen>
+    <dimen name="pay_top_view_h">29dp</dimen>
+    <dimen name="pay_top_view_textsize">13.5sp</dimen>
+    <dimen name="pay_item_h">49dp</dimen>
+    <dimen name="pay_item_margin_left">35dp</dimen>
+    <dimen name="pay_item_money_textsize">16.5sp</dimen>
+    <dimen name="pay_item_space_h">52.5dp</dimen>
+    <dimen name="pay_item_space_textsize">12.5sp</dimen>
+    <dimen name="pay_title_padding_l_r">24dp</dimen>
+    <dimen name="pay_passwd_textsize">20sp</dimen>
+    <dimen name="pay_bank_w_h">30.5dp</dimen>
+
+    <!--优惠券选择对话框-->
+    <dimen name="coupon_dialog_title_h">23dp</dimen>
+    <dimen name="coupon_dialog_maring_v">8dp</dimen>
+    <dimen name="coupon_dialog_w">278dp</dimen>
+    <dimen name="coupon_dialog_item_margin_left">18dp</dimen>
+    <dimen name="coupon_dialog_item_margin_right">14dp</dimen>
+    <dimen name="coupon_dialog_item_w">210dp</dimen>
+    <dimen name="coupon_dialog_item_h">72dp</dimen>
+    <dimen name="coupon_dialog_item_type_textsize">12.5sp</dimen>
+    <dimen name="coupon_dialog_item_money_textsize">16sp</dimen>
+    <dimen name="coupon_dialog_item_name_textsize">7.5sp</dimen>
+    <dimen name="coupon_dialog_item_time_textsize">6sp</dimen>
+
+    <!--实名认证-->
+    <dimen name="certification_space_h">28dp</dimen>
+    <dimen name="certification_must_h">47dp</dimen>
+    <dimen name="certification_tip_textsize">11.5sp</dimen>
+    <dimen name="certification_code_w">47dp</dimen>
+    <dimen name="certification_code_h">28dp</dimen>
+
+    <!--密码输入-->
+    <dimen name="pwd_edit_rect_w_h">35dp</dimen>
+    <dimen name="pwd_edit_rect_space">8.5dp</dimen>
+    <dimen name="pwd_edit_edit_w">252.5dp</dimen>
+    <dimen name="pwd_dialog_w">278dp</dimen>
+    <dimen name="pwd_dialog_content_h">85dp</dimen>
+
+    <!--引导页-->
+    <dimen name="guide_textsize">18sp</dimen>
+    <dimen name="guide_over_w">160dp</dimen>
+    <dimen name="guide_over_h">42dp</dimen>
+    <dimen name="guide_over_margin_bottom">30dp</dimen>
+
+    <dimen name="message_dialog_min_h">80dp</dimen>
+    <dimen name="message_dialog_padding">10dp</dimen>
+    <dimen name="message_dialog_textsize">15sp</dimen>
+</resources>

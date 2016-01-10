@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/more_margin_top"
+        android:orientation="vertical">
+
+        <include layout="@layout/line_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/more_active_center"
+                style="@style/MINE_ITEM_TEXTSTYLE"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_item_h"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/icon_more_message_center"
+                android:drawablePadding="@dimen/my_item_drawable_padding"
+                android:text="@string/more_message_center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/my_item_h_padding"
+                android:paddingRight="@dimen/my_item_h_padding">
+
+                <include layout="@layout/line_gray" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/more_helper_center"
+                style="@style/MINE_ITEM_TEXTSTYLE"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_item_h"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/icon_more_helper_center"
+                android:drawablePadding="@dimen/my_item_drawable_padding"
+                android:text="@string/more_helper_center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/my_item_h_padding"
+                android:paddingRight="@dimen/my_item_h_padding">
+
+                <include layout="@layout/line_gray" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/more_feedback"
+                style="@style/MINE_ITEM_TEXTSTYLE"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_item_h"
+                android:drawableLeft="@mipmap/icon_more_feedback"
+                android:text="@string/more_feedback" />
+        </LinearLayout>
+
+
+        <include layout="@layout/line_gray" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/more_margin_top"
+        android:orientation="vertical">
+
+        <include layout="@layout/line_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/more_connect_us"
+                style="@style/MINE_ITEM_TEXTSTYLE"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_item_h"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/icon_more_connect_us"
+                android:drawablePadding="@dimen/my_item_drawable_padding"
+                android:text="@string/more_conntect_us" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/my_item_h_padding"
+                android:paddingRight="@dimen/my_item_h_padding">
+
+                <include layout="@layout/line_gray" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/more_about_us"
+                style="@style/MINE_ITEM_TEXTSTYLE"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_item_h"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/icon_more_about_us"
+                android:drawablePadding="@dimen/my_item_drawable_padding"
+                android:text="@string/more_abount_us" />
+        </LinearLayout>
+
+
+        <include layout="@layout/line_gray" />
+    </LinearLayout>
+</LinearLayout>

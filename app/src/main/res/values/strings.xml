@@ -1,0 +1,311 @@
+<resources>
+    <string name="app_name">财迷包包</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <string name="common_price_format_error">投资金额必须高于起投金额，且是100的整数倍</string>
+    <string name="common_price_money_error">投资金额不能小于起投金额%s</string>
+    <string name="common_price_money_error1">投资金额不能大于剩余投资金额%s</string>
+    <string name="common_price_format0">投资金额不能为0</string>
+    <string name="common_loading">努力加载中...</string>
+    <string name="common_loading_wait">请稍候...</string>
+    <string name="common_unlogin">您暂未登录，请先登录</string>
+    <string name="common_no_data">暂无数据</string>
+    <string name="common_logining">正在登录...</string>
+    <string name="common_commiting">正在提交...</string>
+    <string name="common_degit">1234567890_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="common_degit_number">1234567890</string>
+    <string name="common_message_title">消息提醒</string>
+    <string name="common_ok">确 定</string>
+    <string name="common_null">暂无数据</string>
+
+    <string name="common_loading_error">加载失败，点击重试</string>
+
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="load_null">没有更多了</string>
+
+    <!--公共-->
+    <string name="common_text_commit">提交</string>
+    <string name="common_text_finish">完成</string>
+    <string name="common_in">立即体验</string>
+
+    <string name="invest_money">投资</string>
+    <string name="invest_year_percent">预期年化</string>
+
+    <!--主页-->
+    <string name="main_menu_1">主页</string>
+    <string name="main_menu_2">理财</string>
+    <string name="main_menu_3">资产</string>
+    <string name="main_menu_4">更多</string>
+
+    <string name="main_menu_title1">财库理财</string>
+    <string name="main_menu_title2">我的资产</string>
+    <string name="main_menu_title3">我要理财</string>
+    <string name="main_menu_title4">更多</string>
+    <string name="main_menu_abount_cai">关于财库理财</string>
+    <string name="main_menu_item1">新手有礼</string>
+    <string name="main_menu_item2">活动公告</string>
+    <string name="main_menu_item3">新手理财</string>
+    <string name="main_menu_recommend">理财推荐</string>
+    <string name="main_menu_recommend_more">更多</string>
+    <string name="main_menu_recommend_1">风险可控</string>
+    <string name="main_menu_recommend_2">实力兑付</string>
+    <string name="main_product_name">产品名称</string>
+    <string name="main_product_years_save">预期年化</string>
+    <string name="main_product_add">立即加入</string>
+    <string name="main_day">天</string>
+
+    <string name="main_menu_new_active">最新活动</string>
+
+    <!--资产-->
+    <string name="my_money_login">登录/注册</string>
+    <string name="my_money_ticket">优惠券</string>
+    <string name="my_money_income">我的收益</string>
+    <string name="my_money_title">我的钱包</string>
+    <string name="my_safer_center">安全中心</string>
+    <string name="my_money_recharge">充值</string>
+    <string name="my_invest_history">投资记录</string>
+    <string name="my_invest_flow">资金流水</string>
+    <string name="my_money_recharge_history">历史</string>
+    <string name="my_ticket_count">%s张</string>
+    <string name="my_income">%s元</string>
+    <string name="my_unbind">已认证</string>
+
+    <string name="my_ticket_unused">未使用</string>
+    <string name="my_ticket_used">已使用</string>
+    <string name="my_ticket_outtime">已过期</string>
+    <string name="my_ticket_type_0">现金券</string>
+    <string name="my_ticket_type_1">年化券</string>
+    <string name="my_ticket_from_to">%1$s 至 %2$s</string>
+
+    <string name="more_message_center">活动中心</string>
+    <string name="more_helper_center">帮助中心</string>
+    <string name="more_feedback">意见反馈</string>
+    <string name="more_conntect_us">联系我们</string>
+    <string name="more_abount_us">关于财迷</string>
+    <string name="more_abount_us_call">呼叫</string>
+    <string name="more_abount_us_cancel">取消</string>
+
+    <!--更多-->
+    <string name="more_recharge_now">立即投资</string>
+    <string name="more_feedback_hide">提供更加安全、便捷的服务，是我们永远的目标</string>
+    <string name="more_feedback_edit_left">还可以输入%s个字</string>
+    <string name="more_feedback_edit_null">请输入您的宝贵意见</string>
+    <string name="more_feedback_commit_sucess">提交成功</string>
+
+    <!--登录-->
+    <string name="login_title">登录</string>
+    <string name="login_mobile_hide">请输入手机号码</string>
+    <string name="login_mobile_error">请输入正确的手机号码</string>
+    <string name="login_pwd_hide">请输入密码</string>
+    <string name="login_now">立即登录</string>
+    <string name="login_free_regist">免费注册</string>
+    <string name="login_forget_pwd">忘记密码?</string>
+    <string name="login_forget_pwd2">忘记密码</string>
+    <string name="login_forget_pwd_code_input">输入验证码</string>
+    <string name="loing_regist_title">验证手机号</string>
+    <string name="loing_regist_pwd_title">设置密码</string>
+    <string name="argument">请同意财迷包包《注册协议》与隐私条款</string>
+
+    <!--重置交易密码-->
+    <string name="business_pwd_step1">重置交易密码</string>
+    <string name="business_pwd_step3">重新设置交易密码</string>
+    <string name="business_pwd_step3_new_pwd">新交易密码:</string>
+    <string name="business_pwd_step3_regist_pwd">登录密码:</string>
+    <string name="business_pwd_step3_regist_re_pwd">再次输入密码:</string>
+
+    <!--忘记密码-->
+    <string name="forget_pwd_next">下一步</string>
+    <string name="forget_safer_detail">账户资金安全由平安保险公司保障</string>
+    <string name="forget_text_des">同意财迷包包</string>
+    <string name="forget_text_des1">《注册协议》</string>
+    <string name="forget_text_des2">《隐私条款》</string>
+    <string name="forget_text_and">与</string>
+    <string name="forget_mobile_title">已发送短信验证码至%s</string>
+    <string name="forget_mobile_code_hide">请输入短信验证码</string>
+    <string name="forget_mobile_reset_pwd">重新设置密码</string>
+    <string name="forget_mobile_reset_pwd_title">账号登录时密码</string>
+    <string name="forget_mobile_reset_pwd_1">新登录密码:</string>
+    <string name="forget_mobile_reset_pwd_2">确认密码:</string>
+    <string name="forget_mobile_reset_pwd_hide">请输入6-16位密码,区分大小写</string>
+    <string name="forget_mobile_reset_new_pwd_hide">请输入6-16位新密码,区分大小写</string>
+    <string name="forget_mobile_reset_re_new_pwd_hide">请输入6-16位确认密码,区分大小写</string>
+
+    <string name="forget_mobile_reset_pwd_hide1">请输入6位纯数字密码</string>
+    <string name="forget_mobile_reset_new_pwd_hide1">请输入6位纯数字密码</string>
+    <string name="forget_mobile_reset_re_new_pwd_hide1">请输入6位纯数字密码</string>
+
+    <string name="forget_mobile_pwd_unequal">两次密码输入不一致</string>
+    <string name="forget_pwd_too_simple">密码过于简单,请重新输入</string>
+
+    <!--充值-->
+    <string name="recharge_acount_left">账户余额:</string>
+    <string name="recharge_acount_yuan">元</string>
+    <string name="recharge_recharge_">充值金额:</string>
+    <string name="recharge_cash">提现金额:</string>
+    <string name="recharge_recharge_value">请输入充值金额</string>
+    <string name="recharge_cash_value">请输入提现金额</string>
+    <string name="recharge_cash_value_error">提现金额大于账户余额</string>
+    <string name="recharge_cash_value_error2">提现金额必须大于0</string>
+    <string name="recharge_cash_value_error3">充值金额必须大于0</string>
+    <string name="recharge_recharge_poundage">零手续费</string>
+    <string name="recharge_recharge_limit_detail">限额详情</string>
+    <string name="recharge_recharge_commit">确认充值</string>
+    <string name="recharge_recharge_cash_commit">确认提现</string>
+    <string name="recharge_recharge_refresh">刷新</string>
+    <string name="recharge_recharge_history_back">返回理财</string>
+    <string name="recharge_recharge_history">充值历史</string>
+    <string name="recharge_recharge_sucess">充值成功</string>
+    <string name="recharge_recharge_failed">充值失败</string>
+    <string name="recharge_recharge_cash_sucess">提现成功</string>
+    <string name="recharge_recharge_cash_failed">提现失败</string>
+    <string name="recharge_ing">正在充值...</string>
+    <string name="cash_ing">正在提现...</string>
+
+    <!--用户信息-->
+    <string name="user_info_update">修改</string>
+    <string name="user_info_refreshing">正在获取最新信息...</string>
+    <string name="user_info_get">@string/common_loading_wait</string>
+    <string name="user_info_nickname">用户名</string>
+    <string name="user_info_name">姓名</string>
+    <string name="user_info_id">身份证</string>
+    <string name="user_info_bank">银行卡</string>
+    <string name="user_info_login_pwd">登录密码</string>
+    <string name="user_info_business_pwd">交易密码</string>
+    <string name="user_info_logout">退出登录</string>
+    <string name="user_info_unbind">未绑定</string>
+    <string name="user_info_pwd_udpate">修改登录密码</string>
+    <string name="user_info_business_pwd_udpate">修改交易密码</string>
+    <string name="user_info_old_pwd">旧密码:</string>
+    <string name="user_info_new_pwd">新密码:</string>
+    <string name="user_info_re_new_pwd">确认密码:</string>
+    <string name="user_info_update_pwd">正在修改密码...</string>
+
+    <!--钱包-->
+    <string name="wallet_ticket">优惠券</string>
+    <string name="wallet_income">累积收入</string>
+    <string name="wallet_income_total">总资产</string>
+    <string name="wallet_income_over">已结算收益</string>
+    <string name="wallet_income_wait">待结算收益</string>
+    <string name="wallet_income_detail">收益明细</string>
+    <string name="wallet_can_use">可用余额</string>
+    <string name="wallet_couldnot_user">冻结金额</string>
+    <string name="wallet_recharge">充值</string>
+    <string name="wallet_take_out">提现</string>
+    <string name="wallet_take_out_history">提现历史</string>
+    <string name="wallet_take_out_sucess">提现成功</string>
+    <string name="wallet_take_out_failed">提现失败</string>
+    <string name="wallet_ticket_user_detail">优惠券使用说明</string>
+
+    <string name="waller_loading">正在获取支付信息</string>
+
+    <!--优惠券-->
+    <string name="ticket_statu1">现金券</string>
+    <string name="ticket_statu2">年化券</string>
+    <string name="bank_bind_">已绑定银行卡( %s )</string>
+
+    <!--投资记录-->
+    <string name="investing">投资中</string>
+    <string name="investing_back">已还款</string>
+    <string name="investing_value">待结算收益</string>
+    <string name="investing_back_value">已结算收益</string>
+    <string name="investing_detail">项目详情</string>
+    <string name="investing_rate">预期年化:%s</string>
+    <string name="investing_start_time">投资时间:%s</string>
+    <string name="investing_end_time">项目到期:%s</string>
+
+    <!--项目详情-->
+    <string name="detail_title_">预期年化</string>
+    <string name="detail_project_p">项目披露</string>
+    <string name="detail_project_safer">安全保障</string>
+    <string name="detail_days">%1$s元起投 | %2$s天 | T+%3$s</string>
+    <string name="detail_unfinish">还款中</string>
+    <string name="detail_finished">已还款</string>
+    <string name="detail_buyer_count">%s人已投资</string>
+    <string name="detail_buyer_count2">已有%s人投资</string>
+    <string name="detail_money">总金额%s元</string>
+    <string name="detail_remain">剩余%s元</string>
+    <string name="detail_end_time">%s到期</string>
+
+    <!--投资记录-->
+    <string name="captial_item_all">全部流水</string>
+    <string name="captial_item_0">充值</string>
+    <string name="captial_item_1">提现</string>
+    <string name="captial_item_2">投资</string>
+    <string name="captial_item_3">还本</string>
+    <string name="captial_item_4">付息</string>
+
+    <!--理财-->
+    <string name="finacial_limit">理财期限</string>
+    <string name="finacial_start_limit">起投金额</string>
+    <string name="finacial_buycount1">已有</string>
+    <string name="finacial_buycount2">人投资</string>
+
+
+    <!--立即投资-->
+    <string name="invest_title">投资金额</string>
+    <string name="invest_title_des">本次投资</string>
+    <string name="invest_income">预期收益%s元</string>
+    <string name="invest_multiple">是银行理财%s倍</string>
+    <string name="invest_end_time">到期时间:</string>
+    <string name="invest_end_income">预期收益:</string>
+
+    <!--立即支付-->
+    <string name="finacial_pay">立即支付</string>
+    <string name="finacial_pay_p_name_default">本次投资项目:</string>
+    <string name="finacial_pay_p_name">本次投资项目: %s</string>
+    <string name="finacial_pay_p_left">可用余额支付:</string>
+    <string name="finacial_pay_p_paper">优惠券:</string>
+    <string name="finacial_pay_p_card">银行卡支付:</string>
+    <string name="finacial_pay_p_card2">银行卡</string>
+
+    <!--实名认证-->
+    <string name="certification_step1">实名认证</string>
+    <string name="certification_checking">正在认证,请稍等...</string>
+    <string name="certification_step1_business_pwd">设置交易密码</string>
+    <string name="certification_step1_pwd_hide">请输入6位纯数字</string>
+    <string name="certification_step1_pwd_toast">请输入6位纯数字密码</string>
+    <string name="certification_step1_pwd_unequals">两次密码输入不一致</string>
+
+    <string name="certification_name">持卡人:</string>
+    <string name="certification_id">身份证号码:</string>
+    <string name="certification_card">银行卡号:</string>
+    <string name="certification_mobile">预留手机:</string>
+    <string name="certification_name_hide">请输入姓名</string>
+    <string name="certification_id_hide">请输入身份证号码</string>
+    <string name="certification_card_hide">请输入银行卡号</string>
+    <string name="certification_mobile_hide">请输入银行预留手机号</string>
+    <string name="certification_tip1">* 请填写本人真实信息,认证后不可更改</string>
+    <string name="certification_tip2">* 请绑定持卡人所有的银行卡</string>
+    <string name="certification_sucess">实名认证成功</string>
+    <string name="certification_failed">实名认证失败</string>
+    <string name="certification_code">验证码:</string>
+    <string name="certification_code_get">获取</string>
+    <string name="certification_code_get_hide">请输入手机动态验证码</string>
+    <string name="certification_card_error">请输入正确的银行卡号</string>
+
+    <!--优惠券-->
+    <string name="coupon_title">可使用优惠券</string>
+    <string name="coupon_null">没有可使用优惠券</string>
+    <string name="coupon_should_use">立即使用</string>
+    <string name="coupon_choose_null">请选择优惠券</string>
+
+    <string name="pay_business_pwd">交易密码</string>
+    <string name="pay_business_paying">正在支付,请稍等...</string>
+    <string name="pay_business_pay_sucessed">支付成功</string>
+    <string name="pay_business_pay_failed">支付失败</string>
+</resources>
+

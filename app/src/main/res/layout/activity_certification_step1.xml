@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/forget_safer_des_textsize_margin_left"
+        android:layout_marginLeft="@dimen/forget_safer_des_textsize_margin_left"
+        android:layout_marginTop="@dimen/forget_safer_des_textsize_margin_top"
+        android:text="@string/certification_step1_business_pwd"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/forget_safer_des_textsize" />
+
+    <include layout="@layout/line_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/forget_safer_des_textsize_margin_left"
+        android:layout_marginRight="@dimen/forget_safer_des_textsize_margin_left"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_pwd_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/user_info_business_pwd"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/forget_pwd_textsize" />
+
+        <com.cmbb.app.views.widget.EditLayout
+            android:id="@+id/edit_pwd1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/forget_safer_des_textsize_margin_left"></com.cmbb.app.views.widget.EditLayout>
+    </LinearLayout>
+
+    <include layout="@layout/line_gray" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/forget_pwd_step1_margin_top" />
+
+    <include layout="@layout/line_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/forget_safer_des_textsize_margin_left"
+        android:layout_marginRight="@dimen/forget_safer_des_textsize_margin_left"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_re_pwd_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/forget_mobile_reset_pwd_2"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/forget_pwd_textsize" />
+
+        <com.cmbb.app.views.widget.EditLayout
+            android:id="@+id/edit_pwd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/forget_safer_des_textsize_margin_left"></com.cmbb.app.views.widget.EditLayout>
+    </LinearLayout>
+
+    <include layout="@layout/line_gray" />
+
+
+    <Button
+        android:id="@+id/commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_btn_height"
+        android:layout_marginLeft="@dimen/login_logo_padding"
+        android:layout_marginRight="@dimen/login_logo_padding"
+        android:layout_marginTop="@dimen/forget_pwd_step1_margin_top"
+        android:background="@drawable/selector_btn_blue"
+        android:text="@string/forget_pwd_next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_btn_textsize" />
+</LinearLayout>

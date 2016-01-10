@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/coupon_des"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/wallet_page1_title_h"
+        android:layout_gravity="center"
+        android:drawableLeft="@mipmap/icon_question"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="@string/wallet_ticket_user_detail"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/wallet_page1_title_testszie" />
+
+    <include layout="@layout/line_gray" />
+
+    <ExpandableListView
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+</LinearLayout>

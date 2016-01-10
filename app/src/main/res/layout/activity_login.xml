@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_logo_h"
+        android:scaleType="centerInside"
+        android:src="@mipmap/login_logo" />
+
+    <include layout="@layout/line_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/login_logo_padding"
+        android:paddingRight="@dimen/login_logo_padding">
+
+        <com.cmbb.app.views.widget.EditLayout
+            android:id="@+id/edit_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.cmbb.app.views.widget.EditLayout>
+
+        <include layout="@layout/line_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <com.cmbb.app.views.widget.EditLayout
+                android:id="@+id/edit_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></com.cmbb.app.views.widget.EditLayout>
+
+            <ImageView
+                android:id="@+id/hide_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/login_logo_padding"
+                android:paddingRight="@dimen/login_logo_padding"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_pwd_show" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/line_gray" />
+
+    <TextView
+        android:id="@+id/login_forget_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/login_logo_padding"
+        android:layout_marginTop="@dimen/login_btn_regist_margint_top"
+        android:text="@string/login_forget_pwd"
+        android:textColor="@color/color_959595" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_btn_height"
+        android:layout_marginLeft="@dimen/login_logo_padding"
+        android:layout_marginRight="@dimen/login_logo_padding"
+        android:layout_marginTop="@dimen/login_btn_margin_top"
+        android:background="@drawable/selector_btn_blue"
+        android:text="@string/login_now"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_btn_textsize" />
+
+    <Button
+        android:id="@+id/btn_regist"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_btn_height"
+        android:layout_marginLeft="@dimen/login_logo_padding"
+        android:layout_marginRight="@dimen/login_logo_padding"
+        android:layout_marginTop="@dimen/login_btn_regist_margint_top"
+        android:background="@drawable/selector_btn_gray"
+        android:text="@string/login_free_regist"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_btn_textsize" />
+</LinearLayout>

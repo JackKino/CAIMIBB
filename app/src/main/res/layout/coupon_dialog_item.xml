@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/coupon_dialog_item_h"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/coupon_dialog_maring_v"
+    android:paddingLeft="@dimen/coupon_dialog_item_margin_left"
+    android:paddingRight="@dimen/coupon_dialog_item_margin_right"
+    android:paddingTop="@dimen/coupon_dialog_maring_v">
+
+    <CheckBox
+        android:id="@+id/check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/coupon_dialog_item_margin_left"
+        android:button="@drawable/selector_checkbox_btn"
+        android:focusable="false" />
+
+    <LinearLayout
+        android:layout_width="@dimen/coupon_dialog_item_w"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_edit_rect"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_statu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_ticket_statu_unused" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/coupon_dialog_maring_v"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/coupon_dialog_maring_v"
+                android:paddingRight="@dimen/coupon_dialog_maring_v">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|bottom">
+
+                    <TextView
+                        android:id="@+id/tv_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/color_eb6877"
+                        android:textSize="@dimen/coupon_dialog_item_money_textsize"></TextView>
+
+                    <TextView
+                        android:id="@+id/union"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/recharge_acount_yuan"
+                        android:textColor="@color/color_eb6877"
+                        android:textSize="@dimen/coupon_dialog_item_name_textsize"></TextView>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/coupon_dialog_item_name_textsize"></TextView>
+
+                <include layout="@layout/line_gray" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ticket_group_time_height"
+                    android:gravity="center"
+                    android:text="2015/03/14至2016/12/30"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/coupon_dialog_item_time_textsize"></TextView>
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/line_gray_h"
+            android:layout_marginTop="@dimen/line_gray_h"
+            android:background="@mipmap/icon_ticket_name_bg"
+            android:gravity="center"
+            android:text="@string/ticket_statu1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/coupon_dialog_item_type_textsize" />
+    </LinearLayout>
+</LinearLayout>

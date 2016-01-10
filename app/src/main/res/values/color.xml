@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_line">#99DCDCDC</color>
+    <color name="color_app_base_color">#00AEFF</color>
+    <color name="color_app_background">#F8F8F8</color>
+    <color name="color_f8f8f8">#F8F8F8</color>
+    <color name="color_959595">#959595</color>
+    <color name="color_f8f8ff">#F8F8FF</color>
+    <color name="color_c8959595">#C8959595</color>
+    <color name="color_00aeff">#00AEFF</color>
+    <color name="color_dcdcdc">#DCDCDC</color>
+    <color name="color_e6e6e6">#E6E6E6</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_202020">#202020</color>
+    <color name="color_ee5447">#EE5447</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_f97373">#F97373</color>
+    <color name="color_ebebeb">#EBEBEB</color>
+    <color name="color_eb6877">#EB6877</color>
+    <color name="color_aaaaaa">#AAAAAA</color>
+    <color name="color_f9b671">#F9B671</color>
+</resources>

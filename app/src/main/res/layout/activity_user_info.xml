@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/user_margin_top" />
+
+            <include layout="@layout/line_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/my_item_h_padding"
+                android:paddingRight="@dimen/my_item_h_padding">
+
+                <LinearLayout
+                    android:id="@+id/user_nickname_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my_item_h"
+                    android:background="@drawable/selector_trans_item">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/icon_user_headicon"
+                        android:drawablePadding="@dimen/my_item_drawable_padding"
+                        android:gravity="center_vertical"
+                        android:text="@string/user_info_nickname"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/my_top_ticket_textsize" />
+
+                    <TextView
+                        android:id="@+id/tv_nick_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/my_item_recharge_textsize" />
+                </LinearLayout>
+
+                <include layout="@layout/line_gray" />
+
+                <LinearLayout
+                    android:id="@+id/user_name_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my_item_h"
+                    android:background="@drawable/selector_trans_item">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/icon_user_name"
+                        android:drawablePadding="@dimen/my_item_drawable_padding"
+                        android:gravity="center_vertical"
+                        android:text="@string/user_info_name"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/my_top_ticket_textsize" />
+
+                    <TextView
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/my_item_recharge_textsize" />
+                </LinearLayout>
+
+                <include layout="@layout/line_gray" />
+
+                <LinearLayout
+                    android:id="@+id/user_id_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my_item_h"
+                    android:background="@drawable/selector_trans_item">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/icon_user_id"
+                        android:drawablePadding="@dimen/my_item_drawable_padding"
+                        android:gravity="center_vertical"
+                        android:text="@string/user_info_id"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/my_top_ticket_textsize" />
+
+                    <TextView
+                        android:id="@+id/tv_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/my_item_recharge_textsize" />
+                </LinearLayout>
+
+                <include layout="@layout/line_gray" />
+
+                <LinearLayout
+                    android:id="@+id/user_bank_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my_item_h"
+                    android:background="@drawable/selector_trans_item">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/icon_user_bank"
+                        android:drawablePadding="@dimen/my_item_drawable_padding"
+                        android:gravity="center_vertical"
+                        android:text="@string/user_info_bank"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/my_top_ticket_textsize" />
+
+                    <TextView
+                        android:id="@+id/tv_bank_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/my_item_recharge_textsize" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/line_gray" />
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/user_margin_top2" />
+
+            <include layout="@layout/line_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/my_item_h_padding"
+                android:paddingRight="@dimen/my_item_h_padding">
+
+                <LinearLayout
+                    android:id="@+id/user_loginpwd_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my_item_h"
+                    android:background="@drawable/selector_trans_item">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/icon_update_login_pwd"
+                        android:drawablePadding="@dimen/my_item_drawable_padding"
+                        android:gravity="center_vertical"
+                        android:text="@string/user_info_login_pwd"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/my_top_ticket_textsize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:drawablePadding="@dimen/main_menu_drawable_padding"
+                        android:drawableRight="@mipmap/icon_arrow_right_large"
+                        android:gravity="center_vertical"
+                        android:text="@string/user_info_update"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/my_item_recharge_textsize" />
+                </LinearLayout>
+
+                <include layout="@layout/line_gray" />
+
+                <LinearLayout
+                    android:id="@+id/user_business_pwd_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my_item_h"
+                    android:background="@drawable/selector_trans_item">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/icon_user_business_pwd"
+                        android:drawablePadding="@dimen/my_item_drawable_padding"
+                        android:gravity="center_vertical"
+                        android:text="@string/user_info_business_pwd"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/my_top_ticket_textsize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:drawablePadding="@dimen/main_menu_drawable_padding"
+                        android:drawableRight="@mipmap/icon_arrow_right_large"
+                        android:gravity="center_vertical"
+                        android:text="@string/user_info_update"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/my_item_recharge_textsize" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/line_gray" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_btn_height"
+                android:layout_marginLeft="@dimen/my_item_h_padding"
+                android:layout_marginRight="@dimen/my_item_h_padding"
+                android:layout_marginTop="@dimen/user_exit_margin_top"
+                android:background="@drawable/selector_btn_blue"
+                android:text="@string/user_info_logout"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_btn_textsize" />
+        </LinearLayout>
+
+        <include layout="@layout/loading_failed_view" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>帮助中心</title>
+    <style>
+        *{margin:0;padding:0;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent; /* For some Androids */
+        }
+        body{background-color:#f9f9f8;
+            padding-bottom:20px;
+        }
+        p{
+            line-height:22px;
+            color:#666;
+            padding:0 25px 0 10px;
+            border:none;
+        }
+        li{
+            list-style:none
+        }
+        #wrap>.tab-info{
+            display: none;
+        }
+        #tab-tit{
+            overflow: hidden;
+            background-color:#fff;
+            border-bottom:1px solid #ccc;
+            color:#666;
+        }
+        #tab-tit>li{
+            border-bottom:5px solid #fff;
+            padding:10px 0
+        }
+        #tab-tit>li.active{
+            border-color:#00aeff;
+            color:#00aeff
+        }
+        #tab-tit li{
+            float: left;
+            width:25%;
+            text-align:center;
+        }
+        .tab-info{
+            margin-top:20px;
+            border-top:1px solid #dcdcdc;
+            background-color:#fff;
+            font-size:13px;
+        }
+        #wrap>.tab-info.active{
+            display: block;
+        }
+        .tab-info>li{
+            overflow: hidden;
+            border-bottom:1px solid #dcdcdc;
+            padding:10px 0;
+            position: relative;
+        }
+        .tab-info>li>p+p{
+            height:0;
+            overflow: hidden;
+            color:#999;
+            padding-right:10px;
+        }
+        .tab-info>li.active>p+p{
+            height:auto;
+            padding-top:10px;
+        }
+        .tab-info i{
+            display: block;
+            height:17px;
+            width:17px;
+            background:url("icon.png") no-repeat;
+            position: absolute;
+            right:5px;
+            top:12px;
+            -webkit-transition: all .4s;
+            -moz-transition: all .4s;
+            -ms-transition: all .4s;
+            -o-transition: all .4s;
+            transition: all .4s;
+        }
+        .tab-info>li.active i{
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <ul id="tab-tit">
+        <li class="active">账户相关</li>
+        <li>理财产品</li>
+        <li>充值/提现</li>
+        <li>名词解释</li>
+    </ul>
+    <ul class="tab-info active">
+        <li>
+            <i></i>
+            <p>如何注册?</p>
+            <p>在首页右上角点击注册按钮，并填写手机号码，获取验证码，设置登录密码即可完成注册。</p>
+        </li>
+        <li>
+            <i></i>
+            <p>忘记用户名、密码、怎么办？</p>
+            <p>用户名即为您的手机号，登录密码可以在网站首页“登录”界面，点击“忘记密码”，按系统提示操作即可。</p>
+        </li>
+        <li>
+            <i></i>
+            <p>为什么要进行实名认证？</p>
+            <p>为了提高账户的安全等级，保障资金的安全性和合同的有效性，客户需在首次充值前完成实名登记,财库承诺会对所有用户资料严格保密。</p>
+        </li>
+        <li>
+            <i></i>
+            <p>实名登记时，如果身份证号里含有字母x，要如何填写？</p>
+            <p>直接填写x，不区分大小写。</p>
+        </li>
+        <li>
+            <i></i>
+            <p>注册时手机收不到验证码怎么办？</p>
+            <p>（1）确认短信是否被手机软件拦截或过滤<br/>
+                （2）确认手机是否能正常接收短信（信号问题、欠费、停机等）<br/>
+                （3）短信收发过程中可能会有延时，请耐心等候
+            </p>
+        </li>
+        <li>
+            <i></i>
+            <p>为什么要绑定银行卡？</p>
+            <p>绑定银行卡是第三方资金存管安全方式中重要的一环，也是实名认证的一种方式，资金在绑定的银行卡内流动，为投资者提供了资金安全保障。 </p>
+        </li>
+        <li>
+            <i></i>
+            <p>绑定银行卡支持哪些银行？</p>
+            <p>目前仅支持：农行、民生、中行、建行、光大、中信、浦发、兴业、广发、交行、邮政、华夏、招行、工行、平安（含深发）</p>
+        </li>
+        <li>
+            <i></i>
+            <p>银行卡绑定后是否可更改？</p>
+            <p>在绑定银行卡后，点击解绑，然后联系客服人员重新绑定新卡。银行卡的开户名与实名认证姓名必须一致，否则会导致提现失败。</p>
+        </li>
+    </ul>
+    <ul class="tab-info">
+        <li>
+            <i></i>
+            <p>如何进行充值，是否支持信用卡充值？</p>
+            <p>绑定银行卡后登陆进入“我的账户->账户管理->充值”页面进行充值。暂不支持信用卡充值。</p>
+        </li>
+        <li>
+            <i></i>
+            <p>充值金额范围、到账时间和手续费收取规则分别是？</p>
+            <p>目前所支持的银行中除：建行（10万）交行（10万）工行（1万）的单笔限额外。其它所有支持的银行单笔限额均为5万元人民币，每天限额30万元（招行20万、工行2万）。充值暂不收取手续费、实时到账。</p>
+        </li>
+        <li>
+            <i></i>
+            <p>为什么银行已扣款，但平台账户余额没有增加？</p>
+            <p>银行已扣款，但可能由于银行系统原因，资金没有同步流转到第三方支付平台，造成平台账户余额没有增加。可选择等待5分钟左右，再确认资金是否到达余额账户；如果长时间还未到帐，请联系平台客服，工作人员会及时帮您处理。</p>
+        </li>
+        <li>
+            <i></i>
+            <p>提现需要注意哪些问题？</p>
+            <p>
+                （1）进入我的账户-银行卡设置，绑定银行卡，提现金额将汇入此银行卡<br/>
+                （2）确保绑定的银行卡的开户人姓名、身份证号与平台实名登记信息保持一致
+            </p>
+        </li>
+        <li>
+            <i></i>
+            <p>哪些资金是可以提现的，提现需要手续费吗？</p>
+            <p>账户中的可用余额可提现，提现暂无手续费。</p>
+        </li>
+        <li>
+            <i></i>
+            <p>为什么提现需要审核？</p>
+            <p>提现时可能会有需要审核的情况，这是为确保投资人的资金安全。平台会尽快完成审核工作，以完成提现。</p>
+        </li>
+        <li>
+            <i></i>
+            <p>提现需要多长时间到达银行账户？</p>
+            <p>通过审核的提现申请，资金将于下个工作日到达银行卡，具体到卡时间以银行处理为准。</p>
+        </li>
+        <li>
+            <i></i>
+            <p>为什么提现申请会失败？</p>
+            <p>1.账户余额不足。<br/>
+                2.银行开户行信息错误。<br/>
+                3.银行账号/户名错误，或是账号和户名不符。<br/>
+                若遇到提现失败，请及时联系客服电话：400-755-2688
+            </p>
+        </li>
+        <li>
+            <i></i>
+            <p>提现时需要什么验证？</p>
+            <p>输入支付密码即可。</p>
+        </li>
+        <li>
+            <i></i>
+            <p>提现次数和额度有限制吗？</p>
+            <p>每天限申请提现一次，提现额度无限制。</p>
+        </li>
+        <li>
+            <i></i>
+            <p>投资项目已到期，收益什么时候发放？</p>
+            <p>项目到期后，正常情况下收益在到期日次日发放。</p>
+        </li>
+    </ul>
+    <ul class="tab-info">
+        <li>
+            <i></i>
+            <p>平台如何确保交易的安全性？</p>
+            <p>用户通过充值与提现形成的每一笔支付，都将通过第三方支付平台完成，并对资金流转过程进行监管，并携手保险公司为平台的个人投资者投保个人账户资金安全保险，最大限度确保用户资金安全。用户提现时只能将资金转入与本人实名认证信息一致的银行卡内，杜绝了他人冒充提现的可能。</p>
+        </li>
+        <li>
+            <i></i>
+            <p>如果平台遭受攻击是否还能保障用户资金的安全？</p>
+            <p>财库为确保投资人在平台上投资的安全性，网站所有传输数据都采用了安全性更高的超文本传输等多重加密技术。即使平台遭受恶意攻击对方也无法读取数据内容，大幅提高了投资人资金操作的安全性。国内外的很多知名网站都使用类似的安全技术，例如：淘宝以及各种网上银行及电子交易网站。此外财库采用银行级别的软硬件系统安全机制，所有交易的流水信息均实时同步备份，应用、数据、服务功能相互隔离，独立模块式的存在杜绝了数据大面积受损的可能，全方面立体化保障数据安全。</p>
+        </li>
+        <li>
+            <i></i>
+            <p>资金放在财库账户里安全吗？</p>
+            <p>用户未投资的资金全部存放于资金存管银行或第三方支付平台，受存管银行或第三方支付平台的独立监管，确保用户账户资金安全。</p>
+        </li>
+        <li>
+            <i></i>
+            <p>财库平台上的合同、协议和条款这些都有法律效力吗？</p>
+            <p>根据《合同法》第11条规定，当事人可以采用合同书、信件和数据电文等形式订立合同。电子合同是法律认可的书面合同形式之一。财库平台上的所有电子合同（借款合同、协议和法律条款等）均具有法律效力，受相关司法机构的保护。</p>
+        </li>
+        <li>
+            <i></i>
+            <p>财库提供的服务是否合法？</p>
+            <p>财库作为一家互联网金融信息服务平台，根据《合同法》相关规定，向借款人、投资人双方提供的中介信息服务完全符合法律规定。</p>
+        </li>
+    </ul>
+    <ul class="tab-info">
+        <li><p>暂无</p></li>
+    </ul>
+</div>
+</body>
+<script src="zepto.min.js"></script>
+<script>
+    $(function(){
+        var $tabInfo = $('.tab-info');
+        $('#tab-tit>li').on('tap',function(){
+
+            $(this).addClass('active').siblings('li').removeClass('active');
+            $tabInfo.eq($(this).index()).addClass('active').siblings('.tab-info').removeClass('active');
+        })
+        $tabInfo.find('li').on('tap',function(){
+            $(this).toggleClass('active')
+        })
+    })
+</script>
+</html>

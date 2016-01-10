@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_top_view_h"
+        android:background="@mipmap/my_money_top_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_headicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_default_gray" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/my_top_name_padding"
+            android:text="@string/my_money_login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/my_top_name_textsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_top_view_item1_h"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/my_ticket_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/my_money_ticket" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_ticket_value"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|bottom"
+                android:text="@string/my_money_ticket"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/my_top_ticket_textsize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/my_top_ticket_margin"
+                android:gravity="center_horizontal"
+                android:text="" android:id="@+id/my_ticket_count"
+                android:textColor="@color/color_ee5447"
+                android:textSize="@dimen/my_top_ticket_textsize" />
+        </LinearLayout>
+
+        <include layout="@layout/line_v_gray" />
+
+        <LinearLayout
+            android:id="@+id/my_income_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/my_money_income" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_income_value"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|bottom"
+                android:text="@string/my_money_income"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/my_top_ticket_textsize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/my_top_ticket_margin"
+                android:gravity="center_horizontal"
+                android:text="" android:id="@+id/my_income"
+                android:textColor="@color/color_ee5447"
+                android:textSize="@dimen/my_top_ticket_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/line_gray" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/my_top_ticket_margin"
+        android:orientation="vertical">
+
+        <include layout="@layout/line_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/my_item_h_padding"
+            android:paddingRight="@dimen/my_item_h_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_item_h">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/icon_my_money"
+                    android:drawablePadding="@dimen/my_item_drawable_padding"
+                    android:gravity="center_vertical"
+                    android:text="@string/my_money_title"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/my_top_ticket_textsize" />
+
+                <Button
+                    android:id="@+id/my_recharge"
+                    android:layout_width="@dimen/my_item_recharge_w"
+                    android:layout_height="@dimen/my_item_recharge_h"
+                    android:background="@drawable/selector_btn_blue"
+                    android:text="@string/my_money_recharge"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/my_item_recharge_textsize" />
+            </LinearLayout>
+
+            <include layout="@layout/line_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_item_h">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/icon_safer_center"
+                    android:drawablePadding="@dimen/my_item_drawable_padding"
+                    android:gravity="center_vertical"
+                    android:text="@string/my_safer_center"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/my_top_ticket_textsize" />
+
+                <Button
+                    android:id="@+id/my_add_to"
+                    android:layout_width="@dimen/my_item_recharge_w"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:text="@string/main_product_add"
+                    android:textColor="@drawable/selector_main_menu_textcolor_blue"
+                    android:textSize="@dimen/my_item_recharge_textsize" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/line_gray" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/my_top_margin2"
+        android:orientation="vertical">
+
+        <include layout="@layout/line_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/my_invest_history"
+                style="@style/MINE_ITEM_TEXTSTYLE"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_item_h"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/icon_invest"
+                android:text="@string/my_invest_history" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/my_item_h_padding"
+                android:paddingRight="@dimen/my_item_h_padding">
+
+                <include layout="@layout/line_gray" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/my_invest_flow"
+                style="@style/MINE_ITEM_TEXTSTYLE"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_item_h"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/icon_money_flow"
+                android:drawablePadding="@dimen/my_item_drawable_padding"
+                android:text="@string/my_invest_flow" />
+        </LinearLayout>
+
+        <include layout="@layout/line_gray" />
+    </LinearLayout>
+</LinearLayout>

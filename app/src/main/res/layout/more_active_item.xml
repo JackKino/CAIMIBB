@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/more_active_top_item_h"
+        android:gravity="bottom"
+        android:paddingLeft="@dimen/more_active_image_margin"
+        android:paddingRight="@dimen/more_active_image_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="新手活动 (11/10-12/30)"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/more_active_textsize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-11-24"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/more_active_textsize" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/more_active_image_h"
+        android:layout_margin="@dimen/more_active_image_margin"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/test_active_image" />
+</LinearLayout>

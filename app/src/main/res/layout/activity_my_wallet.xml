@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wallet_title_h"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/wallet_ticket"
+            android:textColor="@drawable/selector_main_menu_textcolor"
+            android:textSize="@dimen/wallet_title_textsize" />
+
+        <RadioButton
+            android:id="@+id/radio_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/wallet_income"
+            android:textColor="@drawable/selector_main_menu_textcolor"
+            android:textSize="@dimen/wallet_title_textsize" />
+
+        <RadioButton
+            android:id="@+id/radio_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/wallet_income_total"
+            android:textColor="@drawable/selector_main_menu_textcolor"
+            android:textSize="@dimen/wallet_title_textsize" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wallet_movebar_h">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_ebebeb" />
+
+        <View
+            android:id="@+id/move_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_00aeff" />
+    </FrameLayout>
+
+    <com.cmbb.app.views.widget.MyViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:overScrollMode="never"></com.cmbb.app.views.widget.MyViewPager>
+
+</LinearLayout>

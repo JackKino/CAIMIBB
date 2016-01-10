@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/pwd_dialog_w"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_white_rect"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/invest_dialog_title_h"
+        android:background="@color/color_f97373"
+        android:gravity="center"
+        android:text="@string/pay_business_pwd"
+        android:textColor="@color/white"
+        android:textSize="@dimen/invest_dialog_title_textsize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pwd_dialog_content_h"
+        android:gravity="center">
+
+        <com.cmbb.app.views.widget.PasswordEditLayout
+            android:id="@+id/edit_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></com.cmbb.app.views.widget.PasswordEditLayout>
+    </LinearLayout>
+</LinearLayout>

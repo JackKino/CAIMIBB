@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <com.cmbb.app.views.xlist.XListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:listSelector="@drawable/selector_trans_item"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+    </com.cmbb.app.views.xlist.XListView>
+
+    <include layout="@layout/loading_anim" />
+</FrameLayout>

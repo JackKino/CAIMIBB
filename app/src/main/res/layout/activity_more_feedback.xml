@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <EditText
+        android:id="@+id/et_feedback_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/more_feedback_edit_h"
+        android:layout_margin="@dimen/more_feedback_edit_padding"
+        android:background="@drawable/shape_edit_rect"
+        android:gravity="top|left"
+        android:hint="@string/more_feedback_hide"
+        android:maxLength="100"
+        android:padding="@dimen/more_feedback_edit_padding"
+        android:textColor="@color/color_333333"
+        android:textColorHint="@color/color_dcdcdc"
+        android:textSize="@dimen/more_feedback_edit_textzie" />
+
+    <TextView
+        android:id="@+id/tv_edit_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/more_feedback_edit_padding"
+        android:gravity="right"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/more_feedback_edit_left_textsize" />
+
+</LinearLayout>

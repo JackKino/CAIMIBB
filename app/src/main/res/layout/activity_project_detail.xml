@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/top_msg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/detail_speaker_height"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/detail_speaker_margin_r_l"
+                android:paddingRight="@dimen/detail_speaker_margin_r_l">
+
+                <ImageView
+                    android:id="@+id/news_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_speaker0"></ImageView>
+
+                <com.cmbb.app.views.widget.AutoScrollTextView
+                    android:id="@+id/top_msg_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:ellipsize="marquee"
+                    android:gravity="center_vertical"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:textColor="@color/color_f97373"
+                    android:textSize="@dimen/detail_speaker_textsize" />
+            </LinearLayout>
+
+            <include layout="@layout/line_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/detail_speaker_margin_r_l">
+
+                <TextView
+                    android:id="@+id/end_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="2015/12/10到期"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/detail_time_end_textsize" />
+
+                <TextView
+                    android:id="@+id/p_remain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/detail_time_end_textsize" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:text="@string/detail_title_"
+                android:textColor="@color/color_f97373"
+                android:textSize="@dimen/detail_title_textsize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/p_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textColor="@color/color_f9b671"
+                    android:textSize="@dimen/detail_persend_textsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="%"
+                    android:textColor="@color/color_f9b671"
+                    android:textSize="@dimen/detail_persend_textsize_" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:text="0元起投 | 0天 | T+0"
+                android:textColor="@color/color_f97373"
+                android:textSize="@dimen/detail_title_textsize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingBottom="@dimen/detail_progress_margin"
+                android:paddingLeft="@dimen/detail_speaker_margin_r_l"
+                android:paddingRight="@dimen/detail_speaker_margin_r_l"
+                android:paddingTop="@dimen/detail_progress_margin">
+
+                <ProgressBar
+                    android:id="@+id/p_progress"
+                    style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/detail_progress_h"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_color" />
+
+                <TextView
+                    android:id="@+id/p_progress_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/detail_progress_h"
+                    android:text="0%"
+                    android:textColor="@color/color_f97373"
+                    android:textSize="@dimen/detail_time_end_textsize" />
+            </LinearLayout>
+
+            <include layout="@layout/line_gray" />
+
+            <LinearLayout
+                android:id="@+id/project_info_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/detail_item1_h">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/detail_speaker_margin_r_l">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/detail_project_p"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/detail_title_textsize" />
+
+                    <TextView
+                        android:id="@+id/p_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:lineSpacingMultiplier="1.2"
+                        android:paddingRight="@dimen/detail_speaker_margin_r_l"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/detail_title_textsize" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/detail_speaker_margin_r_l"
+                    android:src="@mipmap/icon_arrow_right_large" />
+            </LinearLayout>
+
+            <include layout="@layout/line_gray" />
+
+            <TextView
+                android:id="@+id/buyer_count"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/detail_item2_h"
+                android:background="@drawable/selector_trans_item"
+                android:drawableRight="@mipmap/icon_arrow_right_large"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/detail_speaker_margin_r_l"
+                android:paddingRight="@dimen/detail_speaker_margin_r_l"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/detail_title_textsize" />
+
+            <include layout="@layout/line_gray" />
+
+            <LinearLayout
+                android:id="@+id/project_safety_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/detail_item3_h">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/detail_speaker_margin_r_l">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/detail_project_safer"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/detail_title_textsize" />
+
+                    <TextView
+                        android:id="@+id/p_safety"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:lineSpacingMultiplier="1.2"
+                        android:paddingRight="@dimen/detail_speaker_margin_r_l"
+                        android:textColor="@color/color_666666"
+                        android:textSize="@dimen/detail_title_textsize" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/detail_speaker_margin_r_l"
+                    android:src="@mipmap/icon_arrow_right_large" />
+            </LinearLayout>
+
+            <include layout="@layout/line_gray" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/invest_now"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_btn_height"
+            android:layout_marginLeft="@dimen/login_logo_padding"
+            android:layout_marginRight="@dimen/login_logo_padding"
+            android:background="@drawable/selector_btn_blue"
+            android:text="@string/more_recharge_now"
+            android:textColor="@color/white"
+            android:textSize="@dimen/login_btn_textsize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/forget_safer_margin_top"
+            android:layout_marginTop="@dimen/forget_safer_margin_top"
+            android:drawableLeft="@mipmap/icon_safer_detail"
+            android:text="@string/forget_safer_detail"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/forget_safer_des_textsize"
+            android:visibility="invisible" />
+    </LinearLayout>
+</LinearLayout>

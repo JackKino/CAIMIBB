@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/invest_title_view_h"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/invest_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/investing_value"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/invest_top_money_textsize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/color_f97373"
+                android:textSize="@dimen/invest_top_money_value_textsize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/recharge_acount_yuan"
+                android:textColor="@color/color_f97373"
+                android:textSize="@dimen/invest_top_money_value_m_textsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/line_gray" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/invest_divier_height"
+        android:background="@color/color_app_background" />
+</LinearLayout>

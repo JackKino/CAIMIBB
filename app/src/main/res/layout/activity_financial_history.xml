@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_app_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.cmbb.app.views.xlist.XListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:divider="@android:color/transparent"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+            android:listSelector="@drawable/selector_trans_item"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+        </com.cmbb.app.views.xlist.XListView>
+
+        <include layout="@layout/loading_anim" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" android:id="@+id/null_tip"
+            android:drawableTop="@mipmap/icon_loading_2"
+            android:text="@string/common_null"
+            android:textColor="@color/color_999999"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refreshing_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/common_title_view"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:fillViewport="true"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/loading_default" />
+
+                    <com.cmbb.app.views.widget.AutoHeightViewPager
+                        android:id="@+id/banner_viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never"
+                        android:scrollbars="none" />
+
+                    <LinearLayout
+                        android:id="@+id/doc_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_margin="@dimen/main_banner_doc_margin"
+                        android:gravity="right"
+                        android:orientation="horizontal"></LinearLayout>
+                </FrameLayout>
+
+                <ViewFlipper
+                    android:id="@+id/view_flipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_menu_viewfilter_h"
+                    android:background="@color/color_f8f8f8"
+                    android:flipInterval="3000"></ViewFlipper>
+
+                <include layout="@layout/line_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_menu_item_h"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/main_func_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/main_menu_drawable_padding"
+                        android:drawableTop="@mipmap/main_menu_item1"
+                        android:gravity="center"
+                        android:text="@string/main_menu_item1"
+                        android:textColor="@drawable/selector_main_menu_textcolor_gray_lilght"
+                        android:textSize="@dimen/main_menu_item_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_func_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/main_menu_drawable_padding"
+                        android:drawableTop="@mipmap/main_menu_item2"
+                        android:gravity="center"
+                        android:text="@string/main_menu_item2"
+                        android:textColor="@drawable/selector_main_menu_textcolor_gray_lilght"
+                        android:textSize="@dimen/main_menu_item_textsize" />
+
+                    <TextView
+                        android:id="@+id/main_func_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/main_menu_drawable_padding"
+                        android:drawableTop="@mipmap/main_menu_item3"
+                        android:gravity="center"
+                        android:text="@string/main_menu_item3"
+                        android:textColor="@drawable/selector_main_menu_textcolor_gray_lilght"
+                        android:textSize="@dimen/main_menu_item_textsize" />
+                </LinearLayout>
+
+                <include layout="@layout/line_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_menu_recomment_item_h"
+                    android:background="@color/color_f8f8f8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/main_menu_recomment_item_p"
+                    android:paddingRight="@dimen/main_menu_recomment_item_p">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/main_menu_recommend"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/main_menu_recomment_textsuze" />
+
+                    <TextView
+                        android:id="@+id/main_more_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/main_menu_drawable_padding"
+                        android:drawableRight="@mipmap/icon_arrow_right_small"
+                        android:text="@string/main_menu_recommend_more"
+                        android:textColor="@drawable/selector_main_menu_textcolor_gray"
+                        android:textSize="@dimen/main_menu_recomment_textsuze" />
+                </LinearLayout>
+
+                <include layout="@layout/line_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_menu_recomment_content_h"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/main_menu_recomment_paddding">
+
+                        <LinearLayout
+                            android:id="@+id/topview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|bottom">
+
+                            <Button
+                                android:id="@+id/btn_recommend_1"
+                                android:layout_width="@dimen/main_menu_recomment_btn_w"
+                                android:layout_height="@dimen/main_menu_recomment_btn_h"
+                                android:layout_marginRight="@dimen/main_menu_drawable_padding"
+                                android:background="@drawable/shape_red_rect"
+                                android:text="@string/main_menu_recommend_1"
+                                android:textColor="@color/color_ee5447"
+                                android:textSize="@dimen/main_menu_recomment_btn_textsize" />
+
+                            <Button
+                                android:layout_width="@dimen/main_menu_recomment_btn_w"
+                                android:layout_height="@dimen/main_menu_recomment_btn_h"
+                                android:layout_marginLeft="@dimen/main_menu_drawable_padding"
+                                android:background="@drawable/shape_red_rect"
+                                android:text="@string/main_menu_recommend_2"
+                                android:textColor="@color/color_ee5447"
+                                android:textSize="@dimen/main_menu_recomment_btn_textsize" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_money"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textColor="@color/color_ee5447"
+                                android:textSize="@dimen/main_menu_recomment_days_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/main_day"
+                                android:textColor="@color/color_666666"
+                                android:textSize="@dimen/main_menu_recomment_day_des_size" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|top"
+                            android:text="定期"
+                            android:textColor="@color/color_202020"
+                            android:textSize="@dimen/main_menu_item_textsize" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_project_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal|bottom"
+                            android:singleLine="true"
+                            android:text="@string/main_product_name"
+                            android:textColor="@color/color_202020"
+                            android:textSize="@dimen/main_product_name_textsize" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_year_pencent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textColor="@color/color_ee5447"
+                                android:textSize="@dimen/main_menu_recomment_percent_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="%"
+                                android:textColor="@color/color_666666"
+                                android:textSize="@dimen/main_menu_recomment_day_des_size" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_money"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|top"
+                            android:text="@string/main_product_years_save"
+                            android:textColor="@color/color_202020"
+                            android:textSize="@dimen/main_menu_item_textsize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/main_add_to"
+                            android:layout_width="@dimen/main_product_add_w"
+                            android:layout_height="@dimen/main_product_add_h"
+                            android:background="@drawable/selector_btn_blue"
+                            android:text="@string/main_product_add"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/main_product_add_textsize" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/line_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_menu_recomment_item_h"
+                    android:background="@color/color_f8f8f8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/main_menu_recomment_item_p"
+                    android:paddingRight="@dimen/main_menu_recomment_item_p">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/main_menu_new_active"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/main_menu_recomment_textsuze" />
+
+                    <TextView
+                        android:id="@+id/main_more_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/main_menu_drawable_padding"
+                        android:drawableRight="@mipmap/icon_arrow_right_small"
+                        android:text="@string/main_menu_recommend_more"
+                        android:textColor="@drawable/selector_main_menu_textcolor_gray"
+                        android:textSize="@dimen/main_menu_recomment_textsuze" />
+                </LinearLayout>
+
+                <include layout="@layout/line_gray" />
+
+                <ImageView
+                    android:id="@+id/iv_lasted_active"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/main_menu_drawable_padding"
+                    android:layout_marginRight="@dimen/main_menu_drawable_padding"
+                    android:adjustViewBounds="true"
+                    android:minHeight="@dimen/main_activity_min_h"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/loading_default" />
+            </LinearLayout>
+
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_about_height"
+        android:background="@drawable/selector_default_item_white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/main_menu_abount_cai"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/main_menu_about_textsize" />
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_arrow_bottom" />
+
+    </LinearLayout>
+
+    <include layout="@layout/loading_anim" />
+
+    <include layout="@layout/loading_failed_view" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/common_title_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_app_base_color"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/system_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></View>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.cmbb.app.views.widget.AutoScrollTextView
+            android:id="@+id/common_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="请初始化标题"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_title_textsize" />
+
+        <ImageView
+            android:id="@+id/common_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/common_title_padding"
+            android:paddingLeft="@dimen/common_title_padding"
+            android:paddingRight="@dimen/common_title_padding_r"
+            android:paddingTop="@dimen/common_title_padding"
+            android:src="@drawable/selector_back_icon"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_title_padding"
+            android:paddingRight="@dimen/common_title_padding"
+            android:text="右字"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_title_right_textsize"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>
